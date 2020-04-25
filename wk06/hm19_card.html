@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<!-- 이 부분은 주석문입니다. 웹 브라우저는 주석을 화면에 출력하지 않습니다. -->
+<html>
+  <head>
+    <!-- 문서제목, 자바스크립트 코드, CSS 스타일 정의, 메타데이터정의 -->
+    <meta charset="utf-8" />
+    <title>hm19 : CSS3 advanced</title>
+    <style>
+      div {
+        display: inline-block;
+        position: absolute; /* 절대 배치 */
+        border: 2px solid green;
+        font-size: 1.5em;
+      }
+      div > p {
+        display: inline-block; /* div의 자식 p */
+        position: absolute; /* 절대 배치 */
+        height: 28px;
+        width: 25px;
+        background: pink;
+      }
+      div > image {
+        display: inline-block;
+        position: absolute;
+      }
+
+      p {
+        padding: 1px;
+        border: 5px solid lightgray; /*border-width와 border-style 동시 지정 */
+      }
+      #repeat {
+        border-image: url("media/tree.jpg") 30 repeat;
+      }
+      #tree {
+        z-index: -3;
+      }
+      #tree1 {
+        position: fixed;
+        z-index: -4;
+        left: 10px;
+        top: 130px;
+        background: y;
+      }
+      #tree2 {
+        position: fixed;
+        z-index: 1;
+        left: 201px;
+        top: 230px;
+        background: y;
+      }
+      #tree3 {
+        position: fixed;
+        z-index: 1;
+        left: 240px;
+        top: 350px;
+        background: y;
+      }
+      #tree4 {
+        position: fixed;
+        z-index: 1;
+        left: 180px;
+        top: 460px;
+        background: y;
+      }
+      #hm19 {
+        position: fixed;
+        top: 670px;
+        left: 320px;
+        width: 120px;
+        padding: 5px;
+        background: yellow;
+        color: black;
+        font-size: 0.8em;
+      }
+      @keyframes textColorAnimation {
+        0% {
+          color: red;
+        }
+        20% {
+          color: orange;
+        }
+        40% {
+          color: yellow;
+        }
+        60% {
+          color: green;
+        }
+        80% {
+          color: blue;
+        }
+        100% {
+          color: purple;
+        }
+      }
+      span {
+        animation-name: textColorAnimation;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+      }
+      span {
+        transition: font-size 3s;
+      }
+      span:hover {
+        font-size: 300%;
+      }
+    </style>
+    <script></script>
+  </head>
+
+  <body>
+    <!-- 문서의 본문 텍스트, 이미지, 테이블, 자바스크립트 코드, 동영상 등 -->
+    <h3>Merry Christmas!</h3>
+    <hr />
+    <p>
+      Merry X-Mas . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .*반짝이는 글자에 다가가면 글씨가 커집니다*
+    </p>
+    <div>
+      <img
+        id="tree"
+        src="media/christmastree.png"
+        width="450px"
+        height="500px"
+        style="left: 120px; top: 140px;"
+        alt="크리스마스 트리"
+      />
+      <img
+        id="tree1"
+        src="media/window.jpg"
+        width="450"
+        height="595"
+        alt="크리스마스 풍경"
+      />
+    <img id="tree2" src="media/tree2.png" width="35" height="35" alt="트리장식2" />
+    <img id="tree3" src="media/tree3.png" width="40" height="40" alt="트리장식3" />
+    <img id="tree4" src="media/tree4.png" width="40" height="40" alt="트리장식4" />
+      <p
+        id="repeat"
+        style="left: 120px; top: 140px; background: red; color: white;"
+      >
+        <span>M</span>
+      </p>
+      <p
+        id="repeat"
+        style="left: 160px; top: 120px; background: red; color: white;"
+      >
+        <span>E</span>
+      </p>
+      <p
+        id="repeat"
+        style="left: 200px; top: 145px; background: red; color: white;"
+      >
+        <span>R</span>
+      </p>
+      <p
+        id="repeat"
+        style="left: 250px; top: 135px; background: red; color: white;"
+      >
+        <span>R</span>
+      </p>
+      <p
+        id="repeat"
+        style="left: 290px; top: 160px; background: red; color: white;"
+      >
+        <span>Y</span>
+      </p>
+      <p
+      id="repeat"
+        style="left: 150px; top: 250px; background: red; color: white;"
+      >
+        <span>X-</span>
+      </p>
+      <p
+        id="repeat"
+        style="left: 200px; top: 260px; background: red; color: white;"
+      >
+        <span>M</span>
+      </p>
+      <p
+        id="repeat"
+        style="left: 240px; top: 245px; background: red; color: white;"
+      >
+        <span>A</span>
+      </p>
+      <p
+        id="repeat"
+        style="left: 280px; top: 255px; background: red; color: white;"
+      >
+        <span>S</span>
+      </p>
+      
+    <div id="hm19">
+        hm19, 장성운
+    </div>
+  </body>
+<hr>
+  <audio src="media/We Wish You A Merry Christmas.mp3" controls autoplay loop>
+</audio>
+</html>
