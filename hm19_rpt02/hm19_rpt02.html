@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!-- 이 부분은 주석문입니다. 웹 브라우저는 주석을 화면에 출력하지 않습니다. -->
+<html>
+  <head>
+    <!-- 문서제목, 자바스크립트 코드, CSS 스타일 정의, 메타데이터정의 -->
+    <meta charset="utf-8" />
+    <title>hm19 : 나는 누구인가?</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+      }
+
+      .header {
+        width: 100%;
+        height: 12%;
+        background: white;
+      }
+
+      .nav {
+        width: 20%;
+        height: 85%;
+        float: left;
+        background: white;
+      }
+
+      .section {
+        width: 60%;
+        height: 85%;
+        float: left;
+        background: white;
+      }
+
+      .aside {
+        width: 20%;
+        height: 85%;
+        float: left;
+        background: #D5D5D5;
+      }
+
+      .footer {
+        width: 100%;
+        height: 3%;
+        clear: both;
+        background: #212121;
+      }
+      h3 {
+      text-align : center;
+    }
+      h4 {
+      text-align : center;
+    }
+
+       .p1 {
+      text-indent : 0.6em; /* 3 글자 들여쓰기 */
+    
+      }
+      .p2 {
+      text-align : center; /* 중앙 정렬 */
+    
+      }
+    </style>
+    <script></script>
+  </head>
+
+  <body>
+    <!-- 문서의 본문 텍스트, 이미지, 테이블, 자바스크립트 코드, 동영상 등 -->
+    <header class="header">
+      <br>
+      <img src="media/main.png" width="700" height="80" />
+    </header>
+    <nav class="nav">
+      <iframe
+        src="hm19_sitelist.html"
+        name="left"
+        width="250"
+        height="730"
+      ></iframe>
+    </nav>
+    <section class="section">
+      <iframe
+        src="hm19_info.html"
+        name="right"
+        width="900"
+        height="730"
+      ></iframe>
+    </section>
+    <aside class="aside">
+    <div style="background-color: #C3C3C3; padding: 1px;">
+      <h3>MEMBER</h3>
+      </div>
+      <hr />
+      <form name="fo" method="get">
+       사용자 ID : <input type="text" size="10" value="" /><br />
+       비밀 번호 : <input type="password" size="10" value="" />
+      <input type="submit" value="로그인" size=10 /><br>
+      <input type="checkbox" value="로그인" />자동 로그인
+      <hr>
+      <br>
+      <br>
+      <div style="background-color: #C3C3C3; padding: 1px;">
+      <h4>업데이트 목록</h4>
+      </div>
+      <hr>
+      <p class="p1">◆ 레이아웃 구성 및 이미지변경<pre>     (2020.05.05 upload)</pre>
+      <p class="p1">◆ 동호회 모집글 <pre>     (2020.05.07 upload)</pre>
+      <p class="p1">◆ X-MAS 파티 초대장 추가<pre>     (2020.05.08 upload)</pre>
+        <p class="p1">◆ 내용보완 및 스타일변경<pre>     (2020.05.09 upload)</pre>
+      <p class="p1">◆ Github과제 업로드<pre>     (2020.05.09 upload)</pre>
+    </aside>
+    <footer class="footer">
+      <small><span style="color: white;">그림출처: 네이버 이미지 및 포토샵</span></small>
+    </footer>
+
+    <hr />
+  </body>
+</html>
