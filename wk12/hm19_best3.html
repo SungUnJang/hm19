@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!-- 이 부분은 주석문입니다. 웹 브라우저는 주석을 화면에 출력하지 않습니다. -->
+<html>
+  <head>
+    <!-- 문서제목, 자바스크립트 코드, CSS 스타일 정의, 메타데이터정의 -->
+    <meta charset="utf-8" />
+    <title>hm19 : favorite 3</title>
+    <style></style>
+
+    <script>
+      function load() {
+        var select = document.getElementById("site");
+        window.location = select.options[select.selectedIndex].value;
+      }
+    </script>
+  </head>
+
+  <body>
+    <!-- 문서의 본문 텍스트, 이미지, 테이블, 자바스크립트 코드, 동영상 등 -->
+    <h2>
+      <strong><span style="color: orchid;">나의 여행 버킷리스트</span></strong>
+    </h2>
+    <hr />
+    <span style="color: purple;"><b>여행 가이드 사이트</b></span> :
+    <select id="site">
+      <option value="https://blog.naver.com/wjsil/221794746020" selected
+        >로스앤젤리스
+      </option>
+      <option value="https://blog.naver.com/h-modetour/221265514417"
+        >프랑스
+      </option>
+      <option value="https://cafe.naver.com/worldgame1/11231">태국 </option>
+    </select>
+
+    <button onclick="load()">웹 사이트 접속</button>
+    <br />
+    <br />
+    <h3>
+      <mark
+        ><b><i>1.로스앤젤리스</i></b></mark
+      >
+    </h3>
+    <ul>
+      <li>국가명: Los Angeles</li>
+      <li>위치: 미국 캘리포니아주</li>
+      <li>인구: 3,792,621 (2010년 기준)</li>
+      <li>시간: 대한민국보다 16시간 느림</li>
+      <li>경위: 서경 118°15′, 북위 34°03</li>
+      <li>예상경비: 300만원</li>
+    </ul>
+    <h3>
+      <mark
+        ><b><i>2. 프랑스</i></b></mark
+      >
+    </h3>
+    <ul>
+      <li>국가명: France</li>
+      <li>위치: 유럽 서부 대서양 연안</li>
+      <li>인구: 65,273,511 (2016년 기준)</li>
+      <li>시간: 대한민국보다 7시간 느림</li>
+      <li>경위: 위도 : 서경 6° ~ 10°, 북위 41° ~ 51°</li>
+      <li>예상경비: 250만원</li>
+    </ul>
+    <h3>
+      <mark
+        ><b><i>3. 태국</i></b></mark
+      >
+    </h3>
+    <ul>
+      <li>국가명: Thailand</li>
+      <li>위치: 동남아시아,인도차이나 반도 중앙</li>
+      <li>인구:69,799,978</li>
+      <li>시간: 대한민국보다 2시간 느림</li>
+      <li>경위 북위 13°~45', 동경 100°~31'</li>
+      <li>예상경비: 70만원</li>
+    </ul>
+  </body>
+</html>
