@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!-- 이 부분은 주석문입니다. 웹 브라우저는 주석을 화면에 출력하지 않습니다. -->
+<html>
+  <head>
+    <!-- 문서제목, 자바스크립트 코드, CSS 스타일 정의, 메타데이터정의 -->
+    <meta charset="utf-8" />
+    <title>hm19 : Best 3 movies</title>
+    <style></style>
+    <script>
+      function load(URL) {
+        window.open(URL, "myWin", "left=300,top=300,width=1200,height=720");
+      }
+    </script>
+  </head>
+
+  <body>
+    <!-- 문서의 본문 텍스트, 이미지, 테이블, 자바스크립트 코드, 동영상 등 -->
+    <h2>
+      <mark
+        ><span style="color: midnightblue;">나의 베스트3 한국영화</span></mark
+      >
+    </h2>
+    <hr />
+    <table>
+      <thead>
+        <tr>
+          <th>1.베테랑</th>
+          <th>2.국제시장</th>
+          <th>3.변호인</th>
+        </tr>
+      </thead>
+      <tfoot>
+        <tr>
+          <td>
+            ▶개요: 액션,드라마 (123분)<br />▶출연: 황정민, 유아인, 유해진 등<br />
+            ▶관객수: 13,414,484명<br />▶개봉일: 2015.08.05<br /> ▶감독: 류승완<br>
+            <a href="javascript:load('https://serieson.naver.com/tvstore/detail.nhn?mcode=115977')"
+              ><b><i>다운로드</i></b></a
+            >
+          </td>
+          <td>
+            ▷개요: 드라마 (126분)<br />▷출연: 황정민, 김유진, 오달수 등<br />
+          ▷관객수: 14,263,940명<br />▷개봉일: 2014.12.17<br />▷감독: 윤제균<br>
+          <a href="javascript:load('https://serieson.naver.com/tvstore/detail.nhn?mcode=102875')">
+           <b><i>다운로드</i></b></a></td>
+          <td>
+            ▶개요: 드라마 (127분)<br />▶출연: 송강호, 김영애, 오달수 등<br />
+          ▶관객수: 11,375,123명<br />▶개봉일: 2013.12.18<br /> ▶감독: 양우석<br>
+          <a href="javascript:load('https://serieson.naver.com/tvstore/detail.nhn?mcode=101901')">
+            <b><i>다운로드</i></b></a</th>
+        </td>
+      </tfoot>
+      <tbody>
+        <tr>
+          <td><img src="media/veteran.jpg" width="250" height="350" /></td>
+          <td><img src="media/market.jpg" width="250" height="350" /></td>
+          <td><img src="media/hoin.jpg" width="250" height="360" /></td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
